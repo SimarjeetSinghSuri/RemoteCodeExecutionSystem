@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    /* color: white; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head{
+    padding: 2vh;
+    padding-right: 10vw;
+    background-color: #dc3655;
+    display: flex;
+    justify-content: right;
+}
+.head section{
+    margin: 0 2vh 0 5vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;   
+    margin: 0 10vw 0 10vw ;
+    /* background-color: palevioletred; */
+}
+
+nav img{
+     margin: 1vh;
+    width: 20vw;
+}
+ul{
+    margin: 0.5vh ;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 4vh;
+    list-style-type: none;
+}
+.button2{
+    padding: 1vh;
+    font-size: 1rem;
+    border: solid #dc3655;
+    border-radius: 8px;
+    background-color: #dc3655;
+}
+
+
+.home {
+    box-sizing:;
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 70vw;
+    margin: 0 15vw 0 15vw;
+    text-align: center;
+
+}
+
+.home div h1{
+    margin: 0 10vw 0 10vw;
+    padding: 10vh 5vh 4vh 5vh;
+    font-size: 3rem;
+}
+.home div p{
+    margin: 0 10vw 0 10vw;
+    padding: 4vh 5vh 10vh 5vh;
+    font-size: 1rem;
+}
+.button1 button{
+    width: 7vw;
+    padding: 1vh;
+    font-size: 1.5rem;
+    border: solid palevioletred;
+    border-radius: 8px;
+    background-color: palevioletred;
+} 
+
+
+
+
+
+.login-container{
+    border: solid black;
+    border-radius: 4px;
+    width: 30vw;
+    height: 70vh;
+    margin: 9vh 35vw 9vh 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-container img{
+    width: 20vw;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.login-form label{
+    margin: 2vh;
+}
+.login-form input{
+    border-radius: 4px;
+    padding: 1.5vh;
+    width: 20vw;
+}
+.login-form button{
+    background-color: #dc3655;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1.5vh;
+    width: 10vw;
+    border-radius: 4px;
+}
+.bottom{
+    display: flex;
+}
+.bottom section{
+    margin: 0 2vw 0 2vw;
+    padding: 1vh;
+}
