@@ -7,7 +7,7 @@
 .head{
     padding: 2vh;
     padding-right: 10vw;
-    background-color: #dc3655;
+    background-color: palevioletred;
     display: flex;
     justify-content: right;
 }
@@ -27,7 +27,7 @@ nav img{
     width: 20vw;
 }
 ul{
-    margin: 0.5vh ;
+    margin: 2.75vh ;
     display: flex;
     align-items: center;
 }
@@ -39,9 +39,9 @@ li {
 .button2{
     padding: 1vh;
     font-size: 1rem;
-    border: solid #dc3655;
+    border: solid palevioletred;
     border-radius: 8px;
-    background-color: #dc3655;
+    background-color: palevioletred;
 }
 
 
@@ -83,7 +83,7 @@ li {
     border-radius: 4px;
     width: 30vw;
     height: 70vh;
-    margin: 9vh 35vw 9vh 35vw;
+    margin: 7vh 35vw 7vh 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,7 @@ li {
     width: 20vw;
 }
 .login-form button{
-    background-color: #dc3655;
+    background-color: palevioletred;
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding: 1.5vh;
@@ -118,4 +118,42 @@ li {
 .bottom section{
     margin: 0 2vw 0 2vw;
     padding: 1vh;
+}
+
+
+
+.signup-container{
+    border: solid black;
+    border-radius: 4px;
+    width: 30vw;
+    height: 78vh;
+    margin: 3vh 35vw 3vh 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup-container img{
+    width: 20vw;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.signup-form label{
+    margin: 1vh;
+}
+.signup-form input{
+    border-radius: 4px;
+    padding: 1vh;
+    width: 20vw;
+}
+.signup-form button{
+    background-color: palevioletred;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1.5vh;
+    width: 10vw;
+    border-radius: 4px;
 }
