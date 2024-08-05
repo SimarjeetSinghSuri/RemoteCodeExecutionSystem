@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQuasar</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <div class="head">
-    <section>Contact us</section>
-    <section>Log in</section>
+    <section class="hoverbutton">How it works?</section>
+    <section class="hoverbutton">Contact us</section>
+    <a href="/signin.html">
+        <section class="hoverbutton">Log in</section>
+
+    </a>
 </div>
 <header>
     <nav>
         <div class="left"><img src="/images/codeQuasarlogo.png" alt=""></div>
         <div class="right">
-            <ul>
-                <li>Explore</li>
-                <li>Get started</li>
-                <li class="button2">Sign Up</li>
+            <ul class="navhover">
+                <a href="#explore">
+                    <li class="navhover">Explore</li>
+                </a>
+              <a href="/problems.html"> <li class="navhover">Problems</li></a> 
+                <a href="#aboutus">
+                    <li class="navhover">About us</li>
+                </a>
+                <a href="/signup.html">
+                    <li class="button2 hoverbutton">Sign Up </li>
+                </a>
             </ul>
         </div>
 
@@ -25,20 +37,87 @@
 </header>
 
 <body>
-<div class="home">
+    <div class="home">
 
-    <div><h1>Discover, Learn, and Succeed Together on This Journey</h1></div>
-    <div><p>CodeQuasar supports students in refining their tech abilities and preparing for future job opportunities. Learn with us and take advantage of our robust remote code execution system to excel.</p></div>
-    <div class="button1">
-        <section><button>Sign up</button></section>
-        <section></section>
+        <div>
+            <h1>Discover, Learn, and Succeed Together on This Journey</h1>
+        </div>
+        <div>
+            <p>CodeQuasar supports students in refining their tech abilities and preparing for future job opportunities.
+                Learn with us and take advantage of our robust remote code execution system to excel.</p>
+        </div>
+        <div class="button1">
+            <section><a href="/signup.html"><button class="hoverbutton">Sign up</button></a></section>
+            <section></section>
+        </div>
     </div>
-</div>
-<hr>
+    <hr class="customline">
 
-<div class="explore">
-    
-</div>
-    
+    <div id="explore" class="explore">
+        <div>
+            <h1>Explore CodeQuasar</h1>
+        </div>
+        <div>
+            <p>Welcome to our RCE System website, your go-to place for learning Data Structures and Algorithms (DSA).
+                Our platform offers a wide range of DSA problems to help you practice and improve your skills. Get
+                detailed feedback, track your progress, and grow from beginner to expert. Join us and start your journey
+                to mastering DSA today!</p>
+        </div>
+        <div class="button4">
+            <section><a href="/getstarted.html"><button class="hoverbutton">Get started</button></a></section>
+            <section></section>
+        </div>
+    </div>
+
+    <hr class="customline">
+
+    <div id="aboutus" class="aboutus">
+
+        <div class="aboutcontent">
+            <h1>About us</h1>
+            <br>
+            <p>Welcome to CodeQuasar, your go-to place for learning Data Structures and Algorithms
+                (DSA). Our platform offers a wide range of DSA problems to help you practice and improve your
+                skills. Get detailed feedback, track your progress, and grow from beginner to expert. Join us and
+                start your journey to mastering DSA today!</p>
+            <div>
+                <br>
+                <h1>Our mission:</h1>
+                <br>
+                <p>Diverse Problem Sets: Tackle a wide range of DSA challenges designed to enhance your
+                    problem-solving abilities.</p>
+                <br>
+                <p> Instant Feedback: Learn from your mistakes and improve faster with real-time feedback on your
+                    code.</p>
+                <br>
+                <p>
+                    Progress Tracking: Monitor your growth and celebrate your achievements with our comprehensive
+                    tracking tools.</p>
+                <br>
+                <p>
+                    User-Friendly Experience: Enjoy a seamless and intuitive interface that makes learning
+                    enjoyable.</p>
+                <br><br>
+
+                <h1>Our story:</h1>
+                <br>
+                <p>Born from a passion for coding and education, CodeQuasar was created by Simarjeet Singh, who
+                    understand the importance of practical learning. We continuously
+                    innovate to bring you the best tools and resources to excel in the world of coding.</p>
+                <br>
+                <p>
+                    Join our community of learners and start your journey to becoming a DSA expert. Together, we can
+                    unlock your full potential and open the door to endless opportunities.</p>
+
+
+                <section></section>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
 </body>
+
 </html>
