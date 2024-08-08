@@ -44,7 +44,7 @@ ul{
     
 }
 
-li {
+ul li {
     margin: 0 4vh;
     list-style-type: none;
 }
@@ -235,6 +235,33 @@ li {
     width: 20vw;
 }
 
+.questionboxes{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 2vw;
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.box{
+    background-color: rgb(216, 112, 147);
+    color: white;
+    display: flex;
+    /* border: 2px solid black; */
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    width: 13.5vw;
+    height: 20vh;
+    font-size: xx-large;
+    transition: all;
+}
+.box:hover{
+    color: black;
+    transform: rotateX(15deg);
+}
+
 .codeblock{
     display: flex;
     height: 100vh;
@@ -244,10 +271,37 @@ li {
 .problems {
     background-color: white;
     margin: 1vh;
+    padding: 1vw;
     border: solid #f0e4e3;
     border-radius: 7px;
-    width: 48vw;
+    width: 46vw;
     overflow:auto;
+}
+.listbox{
+    list-style-position: inside;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    
+    gap: 5vh;
+}
+.list{
+    font-size: large;
+    color: white;
+    background-color: palevioletred;
+    padding: 2vh;
+    border-radius: 10px;
+    transition: all;
+}
+.list:hover{
+    background-color: palevioletred;
+    color: black;
+}
+
+
+.solution {
+    box-sizing: border-box;
 }
 /* General box styling */
 .solbox {
@@ -256,7 +310,7 @@ li {
     border: solid #f0e4e3;
     border-radius: 7px;
     width: 48vw;
-    height: 53vh;
+    height: 48vh;
     overflow: auto;
     padding: 10px;/* Added padding for better inner spacing */
 }
@@ -284,13 +338,25 @@ li {
     font-size: 16px;
 }
 
+.select-language button {
+    width: 15%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px; /* Added border-radius here */
+    background-color: #f9f9f9;
+    font-size: 16px;
+    box-sizing: border-box;
+  
+}
+
+
 .testcases {
     background-color: white;
     margin: 1vh;
     border: solid #f0e4e3;
     border-radius: 7px;
     width: 48vw;
-    height: 40vh;
+    height: 36vh;
     overflow:auto;
 }
 
@@ -328,6 +394,7 @@ li {
     transition: all;
 }
 .hoverbutton:hover{
+    transform: rotateX(20deg);
     background-color: palevioletred;
     color: #4f0d18;
     cursor: pointer;
@@ -337,6 +404,7 @@ li {
     transition: all;
 }
 .navhover:hover{
+    
     color: palevioletred;
     cursor: pointer;
 }

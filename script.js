@@ -1,79 +1,67 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Handle login form submission
-    const loginForm = document.querySelector('.login-form');
-    if (loginForm) {
-        loginForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent the default form submission behavior
+// Function to handle Signup Form Submission
+function handleSignup() {
+    const signupForm = document.querySelector('.signup-form');
 
-            // Get the values from the form inputs
+    if (signupForm) {
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Capture user inputs
+            const email = document.querySelector('input[name="email"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+            const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+            const emailAddress = document.querySelector('input[name="emailAddress"]').value;
+
+            // Store data in variables (for further processing or sending to a database)
+            console.log('Signup Data:', { email, password, confirmPassword, emailAddress });
+
+            // Here you can send data to the server or database
+        });
+    }
+}
+
+// Function to handle Login Form Submission
+function handleLogin() {
+    const loginForm = document.querySelector('.login-form');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Capture user inputs
             const email = document.querySelector('input[name="email"]').value;
             const password = document.querySelector('input[name="password"]').value;
 
-            // Store the values in local storage
-            localStorage.setItem('loginEmail', email);
-            localStorage.setItem('loginPassword', password);
+            // Store data in variables (for further processing or sending to a database)
+            console.log('Login Data:', { email, password });
 
-            // Optional: Display a message or redirect the user
-            alert('Login details saved!');
-            // window.location.href = 'your-next-page.html';
+            // Here you can send data to the server or database
         });
-
-        // Optional: Populate the form with stored values (if any)
-        const storedLoginEmail = localStorage.getItem('loginEmail');
-        const storedLoginPassword = localStorage.getItem('loginPassword');
-
-        if (storedLoginEmail) {
-            document.querySelector('input[name="email"]').value = storedLoginEmail;
-        }
-
-        if (storedLoginPassword) {
-            document.querySelector('input[name="password"]').value = storedLoginPassword;
-        }
     }
+}
 
-    // Handle signup form submission
-    const signupForm = document.querySelector('.signup-form');
-    if (signupForm) {
-        signupForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent the default form submission behavior
+// Function to handle Two Sum Comment Submission
+function handleTwoSumComment() {
+    const commentForm = document.querySelector('.solbox form');
 
-            // Get the values from the form inputs
-            const username = signupForm.querySelector('input[name="email"]').value; // Assuming email field is used for username
-            const password = signupForm.querySelector('input[name="password"]').value;
-            const confirmPassword = signupForm.querySelector('input[name="Confirm password"]').value;
-            const emailAddress = signupForm.querySelector('input[name="email address"]').value;
+    if (commentForm) {
+        commentForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
 
-            // Store the values in local storage
-            localStorage.setItem('signupUsername', username);
-            localStorage.setItem('signupPassword', password);
-            localStorage.setItem('signupConfirmPassword', confirmPassword);
-            localStorage.setItem('signupEmailAddress', emailAddress);
+            // Capture user inputs
+            const comment = document.querySelector('#inputcode').value;
 
-            // Optional: Display a message or redirect the user
-            alert('Signup details saved!');
-            // window.location.href = 'your-next-page.html';
+            // Store data in variable (for further processing or sending to a database)
+            console.log('Two Sum Comment:', comment);
+
+            // Here you can send data to the server or database
         });
-
-        // Optional: Populate the form with stored values (if any)
-        const storedSignupUsername = localStorage.getItem('signupUsername');
-        const storedSignupPassword = localStorage.getItem('signupPassword');
-        const storedSignupConfirmPassword = localStorage.getItem('signupConfirmPassword');
-        const storedSignupEmailAddress = localStorage.getItem('signupEmailAddress');
-
-        if (storedSignupUsername) {
-            signupForm.querySelector('input[name="email"]').value = storedSignupUsername;
-        }
-
-        if (storedSignupPassword) {
-            signupForm.querySelector('input[name="password"]').value = storedSignupPassword;
-        }
-
-        if (storedSignupConfirmPassword) {
-            signupForm.querySelector('input[name="Confirm password"]').value = storedSignupConfirmPassword;
-        }
-
-        if (storedSignupEmailAddress) {
-            signupForm.querySelector('input[name="email address"]').value = storedSignupEmailAddress;
-        }
     }
+}
+
+// Initialize functions
+document.addEventListener('DOMContentLoaded', function() {
+    handleSignup();
+    handleLogin();
+    handleTwoSumComment();
 });

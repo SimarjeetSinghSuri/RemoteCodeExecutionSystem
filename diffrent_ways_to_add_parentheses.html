@@ -4,49 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Sum- CodeQuasar</title>
     <link rel="icon" href="/images/icon.png" type="image/x-icon">
+    <title>diffrent_ways_to_add_parentheses- CodeQuasar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section class="codeblock">
         <div class="problems">
-            <H1>1.Two Sum.</H1>
+            <H1>1.Diffrent Ways to Add Parentheses</H1>
             <br><br>
-           <p> Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
+           <p> Given a string expression of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. You may return the answer in any order</p>
            <br>
-          <p> You may assume that each input would have exactly one solution, and you may not use the same element twice.
+          <p> The test cases are generated such that the output values fit in a 32-bit integer and the number of different results does not exceed 10^4.
         </p>
-        <br>
-       <p> You can return the answer in any order.</p>
-       <br>   
+       
+       <br>
        <br>
 
             <pre>
 <b>Example 1:</b>
-    <b>Input: </b> nums = [2,7,11,15], target = 9
-    <b>Output:</b>[0,1]
-    <b>Explanation:</b> Because nums[0] + nums[1] == 9, we return [0, 1].
+    <b>Input: </b> expression = "2-1-1"
+    <b>Output:</b>[0,2]
+    <b>Explanation:</b> 
+    ((2-1)-1) = 0 
+    (2-(1-1)) = 2
 
 <b>Example 2:</b>
-    <b>Input: </b>nums = [3,2,4], target = 6
-    <b>Output:</b> [1,2]
+    <b>Input: </b>expression = "2*3-4*5"
+    <b>Output:</b> [-34,-14,-10,-10,10]
+    <b>Explanation:</b>
+    (2*(3-(4*5))) = -34 
+    ((2*3)-(4*5)) = -14 
+    ((2*(3-4))*5) = -10 
+    (2*((3-4)*5)) = -10 
+    (((2*3)-4)*5) = 10
 
-Example 3:
-    <b>Input: </b>nums = [3,3], target = 6
-    <b>Output:</b> [0,1]
- 
 
 <b>Constraints:</b>
-      <b>1. </b>2 <= nums.length <= 10^4 
-      <b>2. </b> -10^9 <= nums[i] <= 10^9
-      <b>3. </b>-10^9 <= target <= 10^9
-      <b>4. </b>Only one valid answer exists.
+      <b>1. </b>1 <= expression.length <= 20 
+      <b>2. </b> expression consists of digits and the operator '+', '-', and '*'.
+      <b>3. </b>All the integer values in the input expression are in the range [0, 99].
       
  
-
-Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
             </pre>
         </div>
         <div class="solution">
@@ -61,7 +61,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
             </div>
             <div class="solbox">
                 <form>
-                    <label for="comment"></label>
+                    <label for="comment">Comment:</label>
                     <textarea id="inputcode" name="comment" rows="4" cols="50"></textarea>
                     <br>
                     <button type="submit">Submit</button>
