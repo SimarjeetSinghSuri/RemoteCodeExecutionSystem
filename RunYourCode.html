@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/icon.png" type="image/x-icon">
+    <title>diffrent_ways_to_add_parentheses- CodeQuasar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codemirror-5.65.18/lib/codemirror.css">
+    <script src="codemirror-5.65.18/lib/codemirror.js"></script>
+    <script src="codemirror-5.65.18/mode/python/python.js"></script>
+    <link rel="stylesheet" href="codemirror-5.65.18/theme/dracula.css">
+    <script src="codemirror-5.65.18/addon/edit/closebrackets.js"></script>
+</head>
+
+<header></header>
+    <nav>
+        <div class="left"><a href="/index.html"><img src="/images/codeQuasarlogo.png" alt=""></a></div>
+        <div class="right">
+            <ul class="navhover">
+                <a href="#explore">
+                    <li class="navhover">Explore</li>
+                </a>
+                <a href="/index.html">
+                    <li class="navhover">Go Back</li>
+                </a>
+                <a href="/signup.html">
+                    <li class="button2 hoverbutton">Sign Up </li>
+                </a>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+<body>
+   
+        <div class="runyourcode">
+            <div><h3> Code</h3></div>
+            <div class="select-language">
+                <label for="options">Select language: </label>
+                <select id="options" name="options">                   
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div class="Runcodebox">
+                <!-- <button class="button2 hoverbutton">compile and run</button> -->
+                <form>
+                    <label for="comment"></label>
+                    <textarea id="inputcode" name="comment" rows="30" cols="150"></textarea>
+                    <br>
+                    <button style="background-color: #f0e4e3;" id="reset" type="reset">Reset</button>
+                   
+                    <button class="button2 hoverbutton" type="submit">Submit</button>
+                     
+                </form>
+                
+            </div>
+            
+            <div></div>
+            <script>document.getElementById("reset").addEventListener("click", function () {
+                document.getElementById("inputcode").value = ""; location.reload(); // Clears the textarea
+            });
+            </script>
+    <script src="script.js"></script>
+    <script src="codeeditor.js"></script>
+</body>
+
+</html>
